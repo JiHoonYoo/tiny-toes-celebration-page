@@ -1,166 +1,127 @@
 
 import React from 'react';
-import { MapPin, Calendar, Clock, Heart, Cake, Baby } from 'lucide-react';
+import { MapPin, Calendar, Clock, Heart, Cake } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Index = () => {
-  const handleRSVP = () => {
-    // You can integrate with actual RSVP system here
-    window.open('mailto:parents@email.com?subject=서준이 첫 돌잔치 참석 의사', '_blank');
-  };
-
   const handleMapClick = () => {
-    // Replace with actual venue coordinates
-    window.open('https://map.naver.com/v5/search/돌잔치%20장소', '_blank');
+    window.open('https://map.naver.com/v5/search/무지개%20커뮤니티센터', '_blank');
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-green-50 to-yellow-50">
-      {/* Floating decorative elements */}
-      <div className="fixed top-10 left-5 animate-bounce">
-        <div className="w-8 h-8 bg-blue-200 rounded-full opacity-60"></div>
-      </div>
-      <div className="fixed top-20 right-8 animate-pulse">
-        <div className="w-6 h-6 bg-green-200 rounded-full opacity-50"></div>
-      </div>
-      <div className="fixed top-32 left-12 animate-bounce delay-300">
-        <div className="w-4 h-4 bg-yellow-200 rounded-full opacity-40"></div>
-      </div>
-
-      <div className="container mx-auto px-4 py-8 max-w-md">
-        {/* Header with baby's name */}
-        <div className="text-center mb-8 animate-fade-in">
-          <div className="mb-4">
-            <Baby className="w-16 h-16 mx-auto text-blue-400 mb-2" />
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-pink-25 to-yellow-50 overflow-hidden">
+      {/* Hero Section with Baby's Photo Placeholder */}
+      <div className="relative pt-12 pb-8">
+        <div className="container mx-auto px-6 max-w-sm text-center">
+          {/* Decorative elements */}
+          <div className="absolute top-8 left-8 w-3 h-3 bg-blue-300 rounded-full opacity-60"></div>
+          <div className="absolute top-16 right-6 w-2 h-2 bg-pink-300 rounded-full opacity-50"></div>
+          
+          {/* Baby photo placeholder */}
+          <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-blue-100 to-pink-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+            <div className="text-4xl">👶🏻</div>
           </div>
-          <h1 className="text-4xl font-bold text-blue-800 mb-2 font-serif">
+          
+          {/* Baby's name and title */}
+          <h1 className="text-3xl font-bold text-blue-800 mb-2 font-serif">
             서준이
           </h1>
-          <div className="text-lg text-blue-600 mb-2">
-            첫 번째 생일에
-          </div>
-          <div className="text-2xl font-bold text-green-600 mb-4">
-            초대합니다! 🎂
-          </div>
-          <div className="text-sm text-blue-500">
-            소중한 첫 돌을 함께 축하해 주세요
-          </div>
-        </div>
-
-        {/* Cute illustration section */}
-        <div className="text-center mb-8">
-          <div className="flex justify-center items-center space-x-4 mb-4">
-            <div className="text-4xl animate-bounce">🎈</div>
-            <div className="text-4xl animate-pulse">🐉</div>
-            <Cake className="w-12 h-12 text-yellow-400 animate-pulse" />
-            <div className="text-4xl animate-bounce delay-300">🐉</div>
-          </div>
-          <div className="flex justify-center space-x-2">
-            <div className="text-2xl">🎈</div>
-            <div className="text-2xl">🎈</div>
-            <div className="text-2xl">🎈</div>
-          </div>
-        </div>
-
-        {/* Event details card */}
-        <Card className="mb-6 bg-white/80 backdrop-blur-sm border-blue-200 shadow-lg">
-          <CardContent className="p-6">
-            <h2 className="text-xl font-bold text-blue-800 mb-4 text-center">
-              돌잔치 안내
-            </h2>
-            
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Calendar className="w-5 h-5 text-green-500" />
-                <div>
-                  <div className="font-semibold text-blue-800">날짜</div>
-                  <div className="text-blue-600">2025년 3월 15일 (토요일)</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Clock className="w-5 h-5 text-green-500" />
-                <div>
-                  <div className="font-semibold text-blue-800">시간</div>
-                  <div className="text-blue-600">오후 2시 - 오후 5시</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-green-500" />
-                <div>
-                  <div className="font-semibold text-blue-800">장소</div>
-                  <div className="text-blue-600">
-                    무지개 커뮤니티센터<br />
-                    서울시 강남구 행복로 123
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Parents' message */}
-        <Card className="mb-6 bg-gradient-to-r from-blue-50 to-green-50 border-green-200 shadow-lg">
-          <CardContent className="p-6">
-            <div className="text-center">
-              <Heart className="w-8 h-8 mx-auto text-green-500 mb-3" />
-              <h3 className="font-bold text-blue-800 mb-3">엄마, 아빠의 인사</h3>
-              <p className="text-blue-700 leading-relaxed">
-                우리 서준이가 벌써 첫 돌을 맞았습니다! 🥳<br/><br/>
-                어제 태어난 것 같은데 벌써 걸어 다니고, 옹알이하며 
-                매일 우리의 마음을 녹이고 있어요. 소중한 첫 돌을 
-                사랑하는 가족, 친구들과 함께 축하하고 싶습니다.
-              </p>
-              <div className="mt-4 text-sm text-blue-600 italic">
-                사랑을 담아,<br/>
-                지혜 & 민수 ❤️
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Action buttons */}
-        <div className="space-y-3 mb-8">
-          <Button 
-            onClick={handleRSVP}
-            className="w-full bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-500 hover:to-green-500 text-white py-6 text-lg font-semibold rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105"
-          >
-            참석 의사 전달 💌
-          </Button>
+          <p className="text-lg text-blue-600 mb-1">첫 번째 생일에</p>
+          <p className="text-xl font-semibold text-pink-600 mb-6">초대합니다</p>
           
-          <Button 
-            onClick={handleMapClick}
-            variant="outline"
-            className="w-full border-blue-300 text-blue-700 hover:bg-blue-50 py-6 text-lg font-semibold rounded-xl transition-all duration-300"
-          >
-            <MapPin className="w-5 h-5 mr-2" />
-            오시는 길
-          </Button>
-        </div>
-
-        {/* Footer with decorative elements */}
-        <div className="text-center">
-          <div className="flex justify-center space-x-2 mb-4">
-            <div className="text-3xl">🎂</div>
-            <div className="text-3xl">🎈</div>
-            <div className="text-3xl">🐉</div>
-            <div className="text-3xl">🎈</div>
-            <div className="text-3xl">🎂</div>
+          {/* Cute decorations */}
+          <div className="flex justify-center items-center space-x-3 mb-8">
+            <span className="text-2xl">🎈</span>
+            <span className="text-2xl">🐉</span>
+            <Cake className="w-8 h-8 text-yellow-500" />
+            <span className="text-2xl">🐉</span>
+            <span className="text-2xl">🎈</span>
           </div>
-          <p className="text-blue-500 text-sm">
-            함께 축하해 주세요! 🌈
+        </div>
+      </div>
+
+      {/* Event Details */}
+      <div className="container mx-auto px-6 max-w-sm">
+        <Card className="mb-6 bg-white/90 backdrop-blur-sm shadow-lg border-0 rounded-2xl">
+          <CardContent className="p-6 text-center">
+            <div className="space-y-4">
+              <div className="flex flex-col items-center space-y-2">
+                <Calendar className="w-6 h-6 text-blue-500" />
+                <div>
+                  <p className="text-sm text-gray-600 mb-1">DATE</p>
+                  <p className="text-lg font-semibold text-gray-800">2025년 3월 15일</p>
+                  <p className="text-base text-gray-700">토요일</p>
+                </div>
+              </div>
+              
+              <div className="w-full h-px bg-gray-200"></div>
+              
+              <div className="flex flex-col items-center space-y-2">
+                <Clock className="w-6 h-6 text-green-500" />
+                <div>
+                  <p className="text-sm text-gray-600 mb-1">TIME</p>
+                  <p className="text-lg font-semibold text-gray-800">오후 2시 - 5시</p>
+                </div>
+              </div>
+              
+              <div className="w-full h-px bg-gray-200"></div>
+              
+              <div className="flex flex-col items-center space-y-2">
+                <MapPin className="w-6 h-6 text-pink-500" />
+                <div>
+                  <p className="text-sm text-gray-600 mb-1">PLACE</p>
+                  <p className="text-lg font-semibold text-gray-800">무지개 커뮤니티센터</p>
+                  <p className="text-sm text-gray-600">서울시 강남구 행복로 123</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Parents' Message */}
+        <Card className="mb-6 bg-gradient-to-br from-blue-50 to-pink-50 shadow-lg border-0 rounded-2xl">
+          <CardContent className="p-6 text-center">
+            <Heart className="w-8 h-8 mx-auto text-pink-400 mb-4" />
+            <p className="text-gray-700 leading-relaxed mb-4">
+              우리 서준이가 벌써 첫 돌을<br />
+              맞았습니다 🥳
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              어제 태어난 것 같은데 벌써 걸어 다니고,<br />
+              옹알이하며 매일 우리의 마음을 녹이고 있어요.<br />
+              소중한 첫 돌을 사랑하는 가족, 친구들과<br />
+              함께 축하하고 싶습니다.
+            </p>
+            <div className="text-sm text-gray-500 italic">
+              사랑을 담아<br />
+              지혜 & 민수 ❤️
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Map Button */}
+        <Button 
+          onClick={handleMapClick}
+          className="w-full bg-gradient-to-r from-blue-400 to-pink-400 hover:from-blue-500 hover:to-pink-500 text-white py-4 text-base font-medium rounded-2xl shadow-lg transition-all duration-300 mb-8 border-0"
+        >
+          <MapPin className="w-5 h-5 mr-2" />
+          오시는 길 보기
+        </Button>
+
+        {/* Bottom decorative section */}
+        <div className="text-center pb-8">
+          <div className="flex justify-center space-x-2 mb-4">
+            <span className="text-2xl">🎂</span>
+            <span className="text-2xl">🎈</span>
+            <span className="text-2xl">🐉</span>
+            <span className="text-2xl">🎈</span>
+            <span className="text-2xl">🎂</span>
+          </div>
+          <p className="text-gray-500 text-sm">
+            함께 축하해 주세요 🌈
           </p>
         </div>
-      </div>
-
-      {/* Floating hearts animation */}
-      <div className="fixed bottom-10 right-5 animate-pulse">
-        <Heart className="w-6 h-6 text-green-300" />
-      </div>
-      <div className="fixed bottom-20 left-8 animate-pulse delay-500">
-        <Heart className="w-4 h-4 text-blue-300" />
       </div>
     </div>
   );
