@@ -105,6 +105,8 @@ const Index = () => {
                     <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
                       <img src="/lovable-uploads/KakaoTalk_20250909_225558935.jpg" alt="돌잔치 하민이" className="w-full aspect-square object-cover" />
                     </div>
+                </CarouselItem>
+                <CarouselItem>
                   </div>                  
                   <div className="p-2">
                     <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
