@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, Calendar, Clock, Heart, Cake, Baby } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,244 +7,200 @@ import { useEffect } from "react";
 
 const Index = () => {
   const handleRSVP = () => {
-    // You can integrate with actual RSVP system here
     window.open('mailto:parents@email.com?subject=하민이 첫 돌잔치 참석 의사', '_blank');
   };
 
   const handleMapClick = () => {
-    // Replace with actual venue coordinates
     window.open('https://map.naver.com/v5/search/돌잔치%20장소', '_blank');
   };
 
   useEffect(() => {
     console.log("✅ 현재 경로:", window.location.pathname);
   }, []);
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-green-50 to-yellow-50">
-      {/* Floating decorative elements */}
-      <div className="fixed top-10 left-5 animate-bounce">
-        <div className="w-8 h-8 bg-blue-200 rounded-full opacity-60"></div>
-      </div>
-      <div className="fixed top-20 right-8 animate-pulse">
-        <div className="w-6 h-6 bg-green-200 rounded-full opacity-50"></div>
-      </div>
-      <div className="fixed top-32 left-12 animate-bounce delay-300">
-        <div className="w-4 h-4 bg-yellow-200 rounded-full opacity-40"></div>
-      </div>
-
-      <div className="container mx-auto px-4 py-8 max-w-md">
-        {/* Header with baby's name */}
-        <div className="text-center mb-8 animate-fade-in">
-          <div className="mb-4">
-            <Baby className="w-16 h-16 mx-auto text-blue-400 mb-2" />
+    <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+      <div className="container mx-auto px-8 py-16 max-w-2xl">
+        
+        {/* Hero Image Section */}
+        <div className="text-center mb-20">
+          <div className="relative inline-block mb-12">
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-[2rem] blur-lg"></div>
+            <div className="relative overflow-hidden rounded-3xl shadow-elegant border-4 border-white/50">
+              <img 
+                src="/lovable-uploads/51fd49f4-8a9b-4a2d-a136-b2698a2b8681.png"
+                alt="하민이 첫 돌 기념 사진"
+                className="w-80 h-80 object-cover"
+              />
+            </div>
           </div>
-          <h1 className="text-4xl font-bold text-blue-800 mb-2 font-serif">
-            하민이
-          </h1>
-          <div className="text-lg text-blue-600 mb-2">
-            첫 번째 생일에
-          </div>
-          <div className="text-2xl font-bold text-green-600 mb-4">
-            초대합니다! 🎂
-          </div>
-          <div className="text-sm text-blue-500">
-            소중한 첫 돌을 함께 축하해 주세요
+          
+          <div className="space-y-6">
+            <h1 className="text-7xl font-bold text-foreground tracking-tight">
+              하민이
+            </h1>
+            <p className="text-2xl text-muted-foreground font-light tracking-wide">
+              첫 번째 생일에 초대합니다
+            </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
           </div>
         </div>
 
-        {/* Cute illustration section */}
-        <div className="text-center mb-8">
-          <div className="flex justify-center items-center space-x-4 mb-4">
-            <div className="text-4xl animate-bounce">🎈</div>
-            <div className="text-4xl animate-pulse">🐉</div>
-            <Cake className="w-12 h-12 text-yellow-400 animate-pulse" />
-            <div className="text-4xl animate-bounce delay-300">🐉</div>
-          </div>
-          <div className="flex justify-center space-x-2">
-            <div className="text-2xl">🎈</div>
-            <div className="text-2xl">🎈</div>
-            <div className="text-2xl">🎈</div>
-          </div>
-        </div>
-
-        {/* Event details card */}
-        <Card className="mb-6 bg-white/80 backdrop-blur-sm border-blue-200 shadow-lg">
-          <CardContent className="p-6">
-            <h2 className="text-xl font-bold text-blue-800 mb-4 text-center">
-              돌잔치 안내
-            </h2>
-            
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Calendar className="w-5 h-5 text-green-500" />
-                <div>
-                  <div className="font-semibold text-blue-800">날짜</div>
-                  <div className="text-blue-600">2025년 9월 28일 (일요일)</div>
-                </div>
+        {/* Event Details */}
+        <div className="mb-20">
+          <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
+            돌잔치 안내
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="flex items-start space-x-6 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50">
+              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                <Calendar className="w-6 h-6 text-primary" />
               </div>
-              
-              <div className="flex items-center space-x-3">
-                <Clock className="w-5 h-5 text-green-500" />
-                <div>
-                  <div className="font-semibold text-blue-800">시간</div>
-                  <div className="text-blue-600">오전 11시 30분 ~ 오후 12시 30분</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-green-500" />
-                <div>
-                  <div className="font-semibold text-blue-800">장소</div>
-                  <div className="text-blue-600">
-                    동탄 파티멜로우<br />
-                    경기 화성시 동탄역로 196 판매시설동 2층 L2-163~L2-168호
-                  </div>
-                </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">날짜</h3>
+                <p className="text-lg text-muted-foreground">2025년 9월 28일 (일요일)</p>
               </div>
             </div>
-          </CardContent>
-        </Card>
+            
+            <div className="flex items-start space-x-6 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50">
+              <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                <Clock className="w-6 h-6 text-secondary" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">시간</h3>
+                <p className="text-lg text-muted-foreground">오전 11시 30분 ~ 오후 12시 30분</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-6 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50">
+              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-6 h-6 text-accent" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-2">장소</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  동탄 파티멜로우<br />
+                  경기 화성시 동탄역로 196 판매시설동 2층<br />
+                  L2-163~L2-168호
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Photo Gallery */}
-        <Card className="mb-6 bg-white/90 backdrop-blur-sm border-blue-200 shadow-lg">
-          <CardContent className="p-6">
-            <h2 className="text-xl font-bold text-blue-800 mb-4 text-center">
-              하민이의 성장 앨범 📸
-            </h2>
-            <Carousel className="w-full max-w-xs mx-auto">
+        <div className="mb-20">
+          <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
+            성장 앨범
+          </h2>
+          <div className="relative">
+            <Carousel className="w-full max-w-lg mx-auto">
               <CarouselContent>
                 <CarouselItem>
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/f0c460ab-0d2d-44fe-9378-e4c5185524ff.png"
-                          alt="신생아 하민이 - 병원에서"
-                          className="w-full h-full object-cover"
-                        />
-                      </CardContent>
-                    </Card>
+                  <div className="p-2">
+                    <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
+                      <img 
+                        src="/lovable-uploads/f0c460ab-0d2d-44fe-9378-e4c5185524ff.png"
+                        alt="신생아 하민이"
+                        className="w-full aspect-square object-cover"
+                      />
+                    </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/c86ac4fe-3d37-44a9-a96a-88aca1ba4772.png"
-                          alt="누워있는 하민이"
-                          className="w-full h-full object-cover"
-                        />
-                      </CardContent>
-                    </Card>
+                  <div className="p-2">
+                    <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
+                      <img 
+                        src="/lovable-uploads/c86ac4fe-3d37-44a9-a96a-88aca1ba4772.png"
+                        alt="누워있는 하민이"
+                        className="w-full aspect-square object-cover"
+                      />
+                    </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/0082baab-186d-42bb-8041-768e9cff2e0c.png"
-                          alt="웃고 있는 하민이 - 파란 조명"
-                          className="w-full h-full object-cover"
-                        />
-                      </CardContent>
-                    </Card>
+                  <div className="p-2">
+                    <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
+                      <img 
+                        src="/lovable-uploads/0082baab-186d-42bb-8041-768e9cff2e0c.png"
+                        alt="웃고 있는 하민이"
+                        className="w-full aspect-square object-cover"
+                      />
+                    </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/341126ff-394c-483f-afb1-592159c4ea2e.png"
-                          alt="장난감과 함께하는 하민이"
-                          className="w-full h-full object-cover"
-                        />
-                      </CardContent>
-                    </Card>
+                  <div className="p-2">
+                    <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
+                      <img 
+                        src="/lovable-uploads/341126ff-394c-483f-afb1-592159c4ea2e.png"
+                        alt="장난감과 함께하는 하민이"
+                        className="w-full aspect-square object-cover"
+                      />
+                    </div>
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/4b5bea2c-ae32-4812-ae68-6136e8e96189.png"
-                          alt="책과 함께하는 하민이 - 빈티지 의상"
-                          className="w-full h-full object-cover"
-                        />
-                      </CardContent>
-                    </Card>
+                  <div className="p-2">
+                    <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
+                      <img 
+                        src="/lovable-uploads/4b5bea2c-ae32-4812-ae68-6136e8e96189.png"
+                        alt="책과 함께하는 하민이"
+                        className="w-full aspect-square object-cover"
+                      />
+                    </div>
                   </div>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="left-0" />
+              <CarouselNext className="right-0" />
             </Carousel>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
-        {/* Parents' message */}
-        <Card className="mb-6 bg-gradient-to-r from-blue-50 to-green-50 border-green-200 shadow-lg">
-          <CardContent className="p-6">
-            <div className="text-center">
-              <Heart className="w-8 h-8 mx-auto text-green-500 mb-3" />
-              <h3 className="font-bold text-blue-800 mb-3">엄마, 아빠의 인사</h3>
-              <p className="text-blue-700 leading-relaxed">
-                우리 하민이가 벌써 첫 돌을 맞았습니다! 🥳<br/><br/>
-                어제 태어난 것 같은데 벌써 걸어 다니고, 옹알이하며 
-                매일 우리의 마음을 녹이고 있어요. 소중한 첫 돌을 
-                사랑하는 가족, 친구들과 함께 축하하고 싶습니다.
-              </p>
-              <div className="mt-4 text-sm text-blue-600 italic">
-                사랑을 담아,<br/>
-                재량 & 지훈 ❤️
-              </div>
+        {/* Parents' Message */}
+        <div className="mb-20">
+          <div className="text-center p-12 rounded-3xl bg-card/30 backdrop-blur-sm border border-border/30">
+            <Heart className="w-12 h-12 mx-auto text-primary mb-8" />
+            <h3 className="text-3xl font-bold text-foreground mb-8">엄마, 아빠의 인사</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto mb-8">
+              우리 하민이가 벌써 첫 돌을 맞았습니다!<br/><br/>
+              어제 태어난 것 같은데 벌써 걸어 다니고, 옹알이하며 
+              매일 우리의 마음을 녹이고 있어요. 소중한 첫 돌을 
+              사랑하는 가족, 친구들과 함께 축하하고 싶습니다.
+            </p>
+            <div className="text-lg text-muted-foreground/80 font-light">
+              사랑을 담아 ❤️
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
-        {/* Action buttons */}
-        <div className="space-y-3 mb-8">
+        {/* Action Buttons */}
+        <div className="space-y-6">
           <Button 
             onClick={handleRSVP}
-            className="w-full bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-500 hover:to-green-500 text-white py-6 text-lg font-semibold rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105"
+            className="w-full h-16 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-foreground text-xl font-semibold rounded-2xl shadow-elegant transition-all duration-300 transform hover:scale-[1.02] border-0"
           >
-            참석 의사 전달 💌
+            참석 의사 전달하기
           </Button>
           
           <Button 
             onClick={handleMapClick}
             variant="outline"
-            className="w-full border-blue-300 text-blue-700 hover:bg-blue-50 py-6 text-lg font-semibold rounded-xl transition-all duration-300"
+            className="w-full h-16 border-2 border-border/50 text-foreground hover:bg-card/50 text-xl font-semibold rounded-2xl transition-all duration-300 bg-card/20 backdrop-blur-sm"
           >
-            <MapPin className="w-5 h-5 mr-2" />
-            오시는 길
+            <MapPin className="w-6 h-6 mr-3" />
+            오시는 길 안내
           </Button>
         </div>
 
-        {/* Footer with decorative elements */}
-        <div className="text-center">
-          <div className="flex justify-center space-x-2 mb-4">
-            <div className="text-3xl">🎂</div>
-            <div className="text-3xl">🎈</div>
-            <div className="text-3xl">🐉</div>
-            <div className="text-3xl">🎈</div>
-            <div className="text-3xl">🎂</div>
-          </div>
-          <p className="text-blue-500 text-sm">
-            함께 축하해 주세요! 🌈
+        {/* Footer */}
+        <div className="text-center mt-20 pt-12 border-t border-border/30">
+          <p className="text-muted-foreground text-lg font-light">
+            함께 축하해 주세요 🌸
           </p>
         </div>
-      </div>
-
-      {/* Floating hearts animation */}
-      <div className="fixed bottom-10 right-5 animate-pulse">
-        <Heart className="w-6 h-6 text-green-300" />
-      </div>
-      <div className="fixed bottom-20 left-8 animate-pulse delay-500">
-        <Heart className="w-4 h-4 text-blue-300" />
       </div>
     </div>
   );
