@@ -3,6 +3,7 @@ import React from 'react';
 import { MapPin, Calendar, Clock, Heart, Cake, Baby } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { useEffect } from "react";
 
 const Index = () => {
@@ -79,7 +80,7 @@ const Index = () => {
                 <Calendar className="w-5 h-5 text-green-500" />
                 <div>
                   <div className="font-semibold text-blue-800">날짜</div>
-                  <div className="text-blue-600">2025년 8월 17일 (일요일)</div>
+                  <div className="text-blue-600">2025년 9월 28일 (일요일)</div>
                 </div>
               </div>
               
@@ -87,7 +88,7 @@ const Index = () => {
                 <Clock className="w-5 h-5 text-green-500" />
                 <div>
                   <div className="font-semibold text-blue-800">시간</div>
-                  <div className="text-blue-600">오후 2시 - 오후 5시</div>
+                  <div className="text-blue-600">오후 11시 30분 - 오전 12시 30분</div>
                 </div>
               </div>
               
@@ -102,6 +103,57 @@ const Index = () => {
                 </div>
               </div>
             </div>
+          </CardContent>
+        </Card>
+
+        {/* Photo Gallery */}
+        <Card className="mb-6 bg-white/90 backdrop-blur-sm border-blue-200 shadow-lg">
+          <CardContent className="p-6">
+            <h2 className="text-xl font-bold text-blue-800 mb-4 text-center">
+              하민이의 성장 앨범 📸
+            </h2>
+            <Carousel className="w-full max-w-xs mx-auto">
+              <CarouselContent>
+                <CarouselItem>
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-6 bg-gradient-to-br from-blue-50 to-green-50">
+                        <div className="text-center">
+                          <Baby className="w-16 h-16 mx-auto text-blue-400 mb-2" />
+                          <span className="text-sm text-blue-600">신생아 하민이</span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-6 bg-gradient-to-br from-green-50 to-yellow-50">
+                        <div className="text-center">
+                          <div className="text-4xl mb-2">👶</div>
+                          <span className="text-sm text-green-600">6개월 하민이</span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-6 bg-gradient-to-br from-yellow-50 to-blue-50">
+                        <div className="text-center">
+                          <div className="text-4xl mb-2">🚼</div>
+                          <span className="text-sm text-yellow-600">12개월 하민이</span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </CardContent>
         </Card>
 
