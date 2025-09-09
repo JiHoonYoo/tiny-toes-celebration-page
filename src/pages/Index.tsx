@@ -29,7 +29,7 @@ const Index = () => {
               <img
                 src="/lovable-uploads/4b5bea2c-ae32-4812-ae68-6136e8e96189.png"
                 alt="하민이 첫 돌 기념 사진"
-                className="w-80 h-80 object-cover"
+                className="w-80 h-100 object-cover"
               />
             </div>
           </div>
