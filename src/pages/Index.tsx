@@ -44,19 +44,18 @@ const Index = () => {
         {/* 엄마·아빠 인사 (안내보다 먼저) */}
         <div className="mb-20">
           <div className="text-center p-12 rounded-3xl bg-card/30 backdrop-blur-sm border border-border/30">
-            <Heart className="w-12 h-12 mx-auto text-primary mb-8" />
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto mb-8">
               우리 하민이가 벌써 첫 돌을 맞았습니다!<br /><br />
-              어제 태어난 것 같은데 벌써 걸어 다니고, 옹알이하며
-              매일 우리의 마음을 녹이고 있어요. 소중한 첫 돌을
-              사랑하는 가족, 친구들과 함께 축하하고 싶습니다.
+              어제 태어난 것 같은데 벌써 걸어 다니고, <br />
+              옹알이하며 매일 우리의 마음을 녹이고 있어요. <br />
+              소중한 첫 돌을 사랑하는 가족, 친구들과 함께 축하하고 싶습니다.
             </p>
           </div>
         </div>
 
         {/* 돌잔치 안내 (기존 데이터 유지) */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">돌잔치 안내</h2>
+          <h2 className="text-3xl font-light text-center mb-12 text-foreground">돌잔치 안내</h2>
 
           <div className="space-y-8">
             <div className="flex items-start space-x-6 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50">
@@ -97,11 +96,16 @@ const Index = () => {
 
         {/* 성장 앨범 (기존 리소스 그대로) */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">성장 앨범</h2>
+          <h2 className="text-3xl font-light text-center mb-12 text-foreground">성장 앨범</h2>
           <div className="relative">
             <Carousel className="w-full max-w-lg mx-auto">
               <CarouselContent>
                 <CarouselItem>
+                  <div className="p-2">
+                    <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
+                      <img src="/lovable-uploads/KakaoTalk_20250909_225558935.jpg" alt="돌잔치 하민이" className="w-full aspect-square object-cover" />
+                    </div>
+                  </div>                  
                   <div className="p-2">
                     <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
                       <img src="/lovable-uploads/c86ac4fe-3d37-44a9-a96a-88aca1ba4772.png" alt="누워있는 하민이" className="w-full aspect-square object-cover" />
