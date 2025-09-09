@@ -35,7 +35,7 @@ const Index = () => {
           </div>
 
           {/* 제목 문구 통합 & 약간 더 작게 */}
-          <h1 className="text-6xl font-bold text-foreground tracking-tight">
+          <h1 className="text-3xl font-light text-foreground tracking-tight">
             하민이, 첫 생일❤️
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 rounded-full" />

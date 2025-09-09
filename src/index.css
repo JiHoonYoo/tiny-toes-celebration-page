@@ -4,7 +4,7 @@
 
 /* 손글씨 폰트 추가 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Cute+Font&family=Nanum+Pen+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 /* 전체 글자 크기를 살짝 줄여 투박함 완화 */
 html {
   font-size: 14px;
@@ -97,8 +97,7 @@ html {
 
   body {
     @apply bg-background text-foreground;
-    /* 손글씨 우선, 그 다음 Cute Font → 본문 가독성은 Noto Sans KR */
-    font-family: 'Nanum Pen Script', 'Cute Font', 'Noto Sans KR', sans-serif;
+    font-family: 'Jua', 'Noto Sans KR', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
