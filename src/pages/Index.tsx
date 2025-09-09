@@ -17,8 +17,7 @@ const Index = () => {
     console.log("✅ 현재 경로:", window.location.pathname);
   }, []);
 
-export default function Index() {
-    return (
+  return (
       <div className="relative min-h-screen bg-gradient-to-b from-background to-muted overflow-hidden">
         {/* 🐉 귀여운 용들 */}
         <DragonDecor />
@@ -181,8 +180,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-    );
-  }
+  );
 };
 
 export default Index;
