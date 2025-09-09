@@ -1,10 +1,19 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Import Korean-friendly fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Cute+Font&display=swap');
+/* 손글씨 폰트 추가 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Cute+Font&family=Nanum+Pen+Script&display=swap');
+
+/* 전체 글자 크기를 살짝 줄여 투박함 완화 */
+html {
+  font-size: 14px;
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 13px;
+  }
+}
 
 @layer base {
   :root {
@@ -36,7 +45,7 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-    
+
     /* Pastel gradient colors */
     --gradient-primary: linear-gradient(135deg, hsl(340 40% 85%), hsl(200 30% 90%));
     --gradient-secondary: linear-gradient(180deg, hsl(350 25% 98%), hsl(200 20% 95%));
@@ -72,7 +81,7 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-    
+
     /* Dark mode gradients */
     --gradient-primary: linear-gradient(135deg, hsl(340 30% 70%), hsl(200 20% 75%));
     --gradient-secondary: linear-gradient(180deg, hsl(220 20% 8%), hsl(220 15% 15%));
@@ -88,7 +97,8 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Noto Sans KR', sans-serif;
+    /* 손글씨 우선, 그 다음 Cute Font → 본문 가독성은 Noto Sans KR */
+    font-family: 'Nanum Pen Script', 'Cute Font', 'Noto Sans KR', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -120,31 +130,15 @@
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
 /* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.1); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.2); }
 
 /* Custom pink-25 color */
 .from-pink-25 {
