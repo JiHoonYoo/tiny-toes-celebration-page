@@ -36,7 +36,7 @@ const Index = () => {
 
           {/* 제목 문구 통합 & 약간 더 작게 */}
           <h1 className="text-3xl font-light text-foreground tracking-tight">
-            하민이, 첫 생일❤️
+            하민이의 첫 생일
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 rounded-full" />
         </div>
@@ -45,20 +45,18 @@ const Index = () => {
         <div className="mb-20">
           <div className="text-center p-12 rounded-3xl bg-card/30 backdrop-blur-sm border border-border/30">
             <Heart className="w-12 h-12 mx-auto text-primary mb-8" />
-            <h3 className="text-3xl font-bold text-foreground mb-8">엄마, 아빠의 인사</h3>
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto mb-8">
               우리 하민이가 벌써 첫 돌을 맞았습니다!<br /><br />
               어제 태어난 것 같은데 벌써 걸어 다니고, 옹알이하며
               매일 우리의 마음을 녹이고 있어요. 소중한 첫 돌을
               사랑하는 가족, 친구들과 함께 축하하고 싶습니다.
             </p>
-            <div className="text-lg text-muted-foreground/80 font-light">사랑을 담아 ❤️</div>
           </div>
         </div>
 
         {/* 돌잔치 안내 (기존 데이터 유지) */}
         <div className="mb-20">
-          <h2 className="text-4xl font-bold text-center mb-12 text-foreground">돌잔치 안내</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">돌잔치 안내</h2>
 
           <div className="space-y-8">
             <div className="flex items-start space-x-6 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50">
@@ -99,7 +97,7 @@ const Index = () => {
 
         {/* 성장 앨범 (기존 리소스 그대로) */}
         <div className="mb-20">
-          <h2 className="text-4xl font-bold text-center mb-12 text-foreground">성장 앨범</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">성장 앨범</h2>
           <div className="relative">
             <Carousel className="w-full max-w-lg mx-auto">
               <CarouselContent>
