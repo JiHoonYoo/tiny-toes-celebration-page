@@ -106,13 +106,6 @@ const Index = () => {
                 <CarouselItem>
                   <div className="p-2">
                     <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
-                      <img src="/lovable-uploads/f0c460ab-0d2d-44fe-9378-e4c5185524ff.png" alt="신생아 하민이" className="w-full aspect-square object-cover" />
-                    </div>
-                  </div>
-                </CarouselItem>
-                <CarouselItem>
-                  <div className="p-2">
-                    <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
                       <img src="/lovable-uploads/c86ac4fe-3d37-44a9-a96a-88aca1ba4772.png" alt="누워있는 하민이" className="w-full aspect-square object-cover" />
                     </div>
                   </div>
