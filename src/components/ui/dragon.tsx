@@ -2,7 +2,7 @@
 import React from "react";
 
 export const DragonDecor: React.FC = () => {
-  const dragons = Array.from({ length: 12 }); // 원하는 수로 조절
+  const dragons = Array.from({ length: 50 }); // 원하는 수로 조절
 
   return (
     // 배경 레이어: 부모(relative) 기준으로 전체 덮기
