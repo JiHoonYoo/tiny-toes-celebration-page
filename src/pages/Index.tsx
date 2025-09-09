@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { MapPin, Calendar, Clock, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { DragonDecor } from "@/components/DragonDecor";
+import { DragonDecor } from "@/components/ui/DragonDecor";
 
 const Index = () => {
   const handleRSVP = () => {

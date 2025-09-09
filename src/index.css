@@ -114,6 +114,7 @@ html {
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+  .font-jua { font-family: 'Jua', 'Noto Sans KR', sans-serif; }
 }
 
 @keyframes fadeIn {
