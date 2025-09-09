@@ -117,11 +117,12 @@ const Index = () => {
                 <CarouselItem>
                   <div className="p-1">
                     <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-6 bg-gradient-to-br from-blue-50 to-green-50">
-                        <div className="text-center">
-                          <Baby className="w-16 h-16 mx-auto text-blue-400 mb-2" />
-                          <span className="text-sm text-blue-600">신생아 하민이</span>
-                        </div>
+                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/f0c460ab-0d2d-44fe-9378-e4c5185524ff.png"
+                          alt="신생아 하민이 - 병원에서"
+                          className="w-full h-full object-cover"
+                        />
                       </CardContent>
                     </Card>
                   </div>
@@ -129,11 +130,12 @@ const Index = () => {
                 <CarouselItem>
                   <div className="p-1">
                     <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-6 bg-gradient-to-br from-green-50 to-yellow-50">
-                        <div className="text-center">
-                          <div className="text-4xl mb-2">👶</div>
-                          <span className="text-sm text-green-600">6개월 하민이</span>
-                        </div>
+                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/c86ac4fe-3d37-44a9-a96a-88aca1ba4772.png"
+                          alt="누워있는 하민이"
+                          className="w-full h-full object-cover"
+                        />
                       </CardContent>
                     </Card>
                   </div>
@@ -141,11 +143,38 @@ const Index = () => {
                 <CarouselItem>
                   <div className="p-1">
                     <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-6 bg-gradient-to-br from-yellow-50 to-blue-50">
-                        <div className="text-center">
-                          <div className="text-4xl mb-2">🚼</div>
-                          <span className="text-sm text-yellow-600">12개월 하민이</span>
-                        </div>
+                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/0082baab-186d-42bb-8041-768e9cff2e0c.png"
+                          alt="웃고 있는 하민이 - 파란 조명"
+                          className="w-full h-full object-cover"
+                        />
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/341126ff-394c-483f-afb1-592159c4ea2e.png"
+                          alt="장난감과 함께하는 하민이"
+                          className="w-full h-full object-cover"
+                        />
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+                <CarouselItem>
+                  <div className="p-1">
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-0 overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/4b5bea2c-ae32-4812-ae68-6136e8e96189.png"
+                          alt="책과 함께하는 하민이 - 빈티지 의상"
+                          className="w-full h-full object-cover"
+                        />
                       </CardContent>
                     </Card>
                   </div>
