@@ -4,7 +4,6 @@
 
 /* 손글씨 폰트 추가 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Cute+Font&family=Nanum+Pen+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 /* 전체 글자 크기를 살짝 줄여 투박함 완화 */
 html {
   font-size: 14px;

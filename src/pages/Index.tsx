@@ -41,7 +41,7 @@ const Index = () => {
           </div>
 
           {/* 3. 초대 문구 */}
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto">
+          <p className="text-lg font-normal font-jua text-foreground leading-relaxed max-w-lg mx-auto">
             소중한 순간 고마운 분들을 초대합니다.<br />
             오셔서 하민이의 첫 생일을 축하해 주세요.
           </p>
