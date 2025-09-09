@@ -22,9 +22,15 @@ const Index = () => {
 
         {/* Hero */}
         <div className="text-center mb-16">
+
+          {/* 1. 제목 */}
+          <h1 className="text-3xl font-normal text-foreground tracking-tight mb-10">
+            하민이의 첫 생일
+          </h1>
+
+          {/* 2. 메인사진 */}
           <div className="relative inline-block mb-10">
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-[2rem] blur-lg" />
-            {/* 메인사진 프레임: 점선+링으로 더 러블리하게 */}
             <div className="relative overflow-hidden rounded-3xl shadow-elegant border-4 border-dashed border-primary ring-8 ring-white ring-offset-4 ring-offset-primary/20">
               <img
                 src="/lovable-uploads/4b5bea2c-ae32-4812-ae68-6136e8e96189.png"
@@ -34,10 +40,12 @@ const Index = () => {
             </div>
           </div>
 
-          {/* 제목 문구 통합 & 약간 더 작게 */}
-          <h1 className="text-3xl font-light text-foreground tracking-tight">
-            하민이의 첫 생일
-          </h1>
+          {/* 3. 초대 문구 */}
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-lg mx-auto">
+            소중한 순간 고마운 분들을 초대합니다.<br />
+            오셔서 하민이의 첫 생일을 축하해 주세요.
+          </p>
+
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 rounded-full" />
         </div>
 
