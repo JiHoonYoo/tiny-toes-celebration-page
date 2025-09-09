@@ -27,7 +27,7 @@ const Index = () => {
             {/* 메인사진 프레임: 점선+링으로 더 러블리하게 */}
             <div className="relative overflow-hidden rounded-3xl shadow-elegant border-4 border-dashed border-primary ring-8 ring-white ring-offset-4 ring-offset-primary/20">
               <img
-                src="/lovable-uploads/51fd49f4-8a9b-4a2d-a136-b2698a2b8681.png"
+                src="/lovable-uploads/4b5bea2c-ae32-4812-ae68-6136e8e96189.png"
                 alt="하민이 첫 돌 기념 사진"
                 className="w-80 h-80 object-cover"
               />
@@ -127,7 +127,7 @@ const Index = () => {
                 <CarouselItem>
                   <div className="p-2">
                     <div className="relative overflow-hidden rounded-2xl shadow-soft border-2 border-white/30">
-                      <img src="/lovable-uploads/4b5bea2c-ae32-4812-ae68-6136e8e96189.png" alt="책과 함께하는 하민이" className="w-full aspect-square object-cover" />
+                      <img src="/lovable-uploads/51fd49f4-8a9b-4a2d-a136-b2698a2b8681.png" alt="책과 함께하는 하민이" className="w-full aspect-square object-cover" />
                     </div>
                   </div>
                 </CarouselItem>
