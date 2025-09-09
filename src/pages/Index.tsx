@@ -88,7 +88,7 @@ const Index = () => {
                 <Clock className="w-5 h-5 text-green-500" />
                 <div>
                   <div className="font-semibold text-blue-800">시간</div>
-                  <div className="text-blue-600">오후 11시 30분 - 오전 12시 30분</div>
+                  <div className="text-blue-600">오전 11시 30분 ~ 오후 12시 30분</div>
                 </div>
               </div>
               
